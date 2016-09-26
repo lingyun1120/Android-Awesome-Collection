@@ -1,14 +1,16 @@
 # ANDROID架构 MVP篇#
 
-**Google官方MVP项目 [https://github.com/googlesamples/android-architecture](https://github.com/googlesamples/android-architecture)**
+**无论是MVP还是什么架构，最终的目的都是写出易读性和测试性强的代码。所以不要对于架构钻牛角尖，过度设计不可取。在实际开发中架构自然会跟着升级。谨记！均衡合理！！**
+
 > 
-- todo-mvp/ Basic Model-View-Presenter architecture.
-- todo-mvp-loaders/ Based on todo-mvp, fetches data using Loaders.
-- todo-databinding/ Based on todo-mvp, uses the Data Binding Library.
-- todo-mvp-clean/ Based on todo-mvp, uses concepts from Clean Architecture.
-- todo-mvp-dagger/ Based on todo-mvp, uses Dagger2 for Dependency Injection
-- todo-mvp-contentproviders/ Based on todo-mvp-loaders, fetches data using Loaders and uses Content Providers
-- todo-mvp-rxjava/ Based on todo-mvp, uses RxJava for concurrency and data layer abstraction.
+Google官方MVP项目 [https://github.com/googlesamples/android-architecture](https://github.com/googlesamples/android-architecture)  
+- todo-mvp/ Basic Model-View-Presenter architecture.  
+- todo-mvp-loaders/ Based on todo-mvp, fetches data using Loaders.  
+- todo-databinding/ Based on todo-mvp, uses the Data Binding Library.  
+- todo-mvp-clean/ Based on todo-mvp, uses concepts from Clean Architecture.  
+- todo-mvp-dagger/ Based on todo-mvp, uses Dagger2 for Dependency Injection  
+- todo-mvp-contentproviders/ Based on todo-mvp-loaders, fetches data using Loaders and uses Content Providers  
+- todo-mvp-rxjava/ Based on todo-mvp, uses RxJava for concurrency and data layer abstraction.  
 
 作为官方例子，有很多学习之处，多多研究，想必一定会有所收获。
 
@@ -23,7 +25,9 @@
 	[Android MVP进阶](http://www.jianshu.com/p/49e3d1c5d605) 对上面MVP的优化：View公共方法的提取、Present中View的判空  
 	[Android MVP高级](http://www.jianshu.com/p/d5828ea38b3c) 结合Activity和Fragment的生命周期，加入Loader 对应官方例子todo-mvp-loaders  
 	[Android MVP扩展](http://www.jianshu.com/p/feb1d98f8895) DataLayer, 也就是Model层; DomainLayer, 也就是UseCase层; PresentationLayer，也就是Presenter+UI层  
-3.	
+3.	[Android架构系列-MVP架构的实际应用](http://www.jianshu.com/p/33bdf6a0af23)  
+	![](http://upload-images.jianshu.io/upload_images/1594931-cc82474f58545ff1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+	在原有的P层中加入Interactor，将P层的逻辑更加细化。Interactor的使用根据业务具体情况，非必须。  
 
 ## 基于MVP的开源项目 ##
 1. [极客日报: 一款纯粹的阅读App，基于Material Design + MVP + RxJava + Retrofit + Dagger2 + Realm + Glide](https://github.com/codeestX/GeekNews)  
